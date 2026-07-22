@@ -1,0 +1,7 @@
+.DS_Store
+.Rhistory
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+clean_notebook.py
+data/csv/
