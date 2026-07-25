@@ -19,6 +19,8 @@ Which products and categories are frequently purchased together, and how can tho
 - Segmented households using K-Means based on category purchase behaviour.
 - Built a simple recommendation prototype using lift and confidence scores.
 
+For a portfolio-style write-up of the analysis, findings, and business recommendations, see [`docs/analysis_summary.md`](docs/analysis_summary.md).
+
 ## Tools
 
 - Python
@@ -37,6 +39,8 @@ Which products and categories are frequently purchased together, and how can tho
 ├── requirements.txt
 ├── market_basket_cross_sell_analysis.ipynb
 ├── clean_notebook.py
+├── docs/
+│   └── analysis_summary.md
 └── data/
     └── README.md
 ```
