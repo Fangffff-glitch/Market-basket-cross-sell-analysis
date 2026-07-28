@@ -18,6 +18,7 @@ Which products and categories are frequently purchased together, and how can tho
 - Estimated promotional halo effects by comparing partner-product sales when anchor products were promoted.
 - Segmented households using K-Means based on category purchase behaviour.
 - Built a simple recommendation prototype using lift and confidence scores.
+- Added SQL queries for sales overview, category performance, and category pair analysis.
 
 For a portfolio-style write-up of the analysis, findings, and business recommendations, see [`docs/analysis_summary.md`](docs/analysis_summary.md).
 
@@ -30,6 +31,8 @@ For a portfolio-style write-up of the analysis, findings, and business recommend
 - matplotlib
 - scikit-learn
 - Jupyter Notebook
+- SQL
+- SQLite
 
 ## Repository Structure
 
@@ -41,6 +44,11 @@ For a portfolio-style write-up of the analysis, findings, and business recommend
 ├── clean_notebook.py
 ├── docs/
 │   └── analysis_summary.md
+├── sql/
+│   ├── README.md
+│   ├── 01_sales_overview.sql
+│   ├── 02_top_categories_by_sales.sql
+│   └── 03_category_pair_analysis.sql
 └── data/
     └── README.md
 ```
@@ -76,6 +84,8 @@ The notebook can also be adapted to another grocery transaction dataset with sim
 3. Install the Python packages in `requirements.txt`.
 4. Open and run `market_basket_cross_sell_analysis.ipynb`.
 
+To run the SQL analysis, import `transaction_data.csv` and `product.csv` into a local SQLite database and run the scripts in [`sql/`](sql/).
+
 The analysis is designed for local execution because the raw transaction and promotion files are not committed to GitHub.
 
 ## Portfolio Notes
@@ -83,6 +93,7 @@ The analysis is designed for local execution because the raw transaction and pro
 This project demonstrates:
 
 - Data cleaning and integration
+- SQL querying and relational data joins
 - Exploratory data analysis
 - Market basket analysis
 - Affinity metrics and recommendation logic

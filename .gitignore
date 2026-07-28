@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 clean_notebook.py
 data/csv/
+*.db
+*.sqlite
+*.sqlite3
