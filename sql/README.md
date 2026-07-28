@@ -28,6 +28,8 @@ Raw CSV files and local SQLite database files are not committed to GitHub.
 01_sales_overview.sql
 02_top_categories_by_sales.sql
 03_category_pair_analysis.sql
+04_data_quality_checks.sql
+05_monthly_sales_trends.sql
 ```
 
 ## SQL Skills Demonstrated
@@ -44,4 +46,5 @@ Raw CSV files and local SQLite database files are not committed to GitHub.
 - `LIMIT`
 - Common table expressions using `WITH`
 - Self joins for market basket-style pair analysis
-
+- Data quality checks for missing keys, duplicates, unmatched joins, and anomalous baskets
+- Window functions such as `LAG()` and `RANK()`

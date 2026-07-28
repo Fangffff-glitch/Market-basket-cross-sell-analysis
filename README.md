@@ -48,7 +48,9 @@ For a portfolio-style write-up of the analysis, findings, and business recommend
 │   ├── README.md
 │   ├── 01_sales_overview.sql
 │   ├── 02_top_categories_by_sales.sql
-│   └── 03_category_pair_analysis.sql
+│   ├── 03_category_pair_analysis.sql
+│   ├── 04_data_quality_checks.sql
+│   └── 05_monthly_sales_trends.sql
 └── data/
     └── README.md
 ```
@@ -93,7 +95,7 @@ The analysis is designed for local execution because the raw transaction and pro
 This project demonstrates:
 
 - Data cleaning and integration
-- SQL querying and relational data joins
+- SQL querying, relational data joins, data quality checks, and trend analysis
 - Exploratory data analysis
 - Market basket analysis
 - Affinity metrics and recommendation logic
