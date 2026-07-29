@@ -99,6 +99,8 @@ The strongest category pairs reflect practical household shopping missions:
 - Bag snacks and soft drinks suggest occasion-based baskets such as parties, lunch boxes, or casual consumption.
 - Beef with bread or cheese suggests meal-building missions.
 
+This SQL pair analysis is based on shared basket counts, so it highlights high-frequency category combinations. The Python notebook extends this analysis by calculating support, confidence, and lift, which helps identify category relationships that are strong relative to baseline purchase frequency.
+
 ### Commercial Decisions Supported
 
 - Place high-affinity staples closer together in-store.
@@ -243,4 +245,3 @@ The SQL analysis supports several commercial decisions:
 ## Interview Summary
 
 This SQL work demonstrates how transaction and product data can be validated, joined, aggregated, and translated into commercial recommendations. The analysis covers KPI reporting, category performance, market basket-style pair extraction, data quality checks, anomaly investigation, month-on-month trend analysis, and category ranking using window functions.
-
