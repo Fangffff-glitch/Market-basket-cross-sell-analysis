@@ -87,7 +87,7 @@ The notebook can also be adapted to another grocery transaction dataset with sim
 3. Install the Python packages in `requirements.txt`.
 4. Open and run `market_basket_cross_sell_analysis.ipynb`.
 
-To run the SQL analysis, import `transaction_data.csv` and `product.csv` into a local SQLite database and run the scripts in [`sql/`](sql/).
+To run the SQL analysis, import `transaction_data.csv` and `product.csv` into a local SQLite database and run the scripts in [`sql/`](sql/). The monthly trend query uses derived 30-day periods from the dataset's `DAY` field because no calendar date is available.
 
 The analysis is designed for local execution because the raw transaction and promotion files are not committed to GitHub.
 
