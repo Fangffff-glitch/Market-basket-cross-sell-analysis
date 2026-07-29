@@ -50,7 +50,8 @@ For a portfolio-style write-up of the analysis, findings, and business recommend
 │   ├── 02_top_categories_by_sales.sql
 │   ├── 03_category_pair_analysis.sql
 │   ├── 04_data_quality_checks.sql
-│   └── 05_monthly_sales_trends.sql
+│   ├── 05_monthly_sales_trends.sql
+│   └── sql_business_summary.md
 └── data/
     └── README.md
 ```

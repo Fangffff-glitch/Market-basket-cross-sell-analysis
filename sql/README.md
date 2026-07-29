@@ -30,7 +30,10 @@ Raw CSV files and local SQLite database files are not committed to GitHub.
 03_category_pair_analysis.sql
 04_data_quality_checks.sql
 05_monthly_sales_trends.sql
+sql_business_summary.md
 ```
+
+`sql_business_summary.md` summarises the business questions, main outputs, anomalies, trend findings, and commercial implications from the SQL analysis.
 
 ## SQL Skills Demonstrated
 
