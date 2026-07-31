@@ -19,6 +19,7 @@ Which products and categories are frequently purchased together, and how can tho
 - Segmented households using K-Means based on category purchase behaviour.
 - Built a simple recommendation prototype using lift and confidence scores.
 - Added SQL queries for sales overview, category performance, and category pair analysis.
+- Prepared Tableau-ready summary outputs for KPI cards, trend analysis, category performance, category-pair analysis, and data quality checks.
 
 For a portfolio-style write-up of the analysis, findings, and business recommendations, see [`docs/analysis_summary.md`](docs/analysis_summary.md).
 
@@ -52,6 +53,13 @@ For a portfolio-style write-up of the analysis, findings, and business recommend
 │   ├── 04_data_quality_checks.sql
 │   ├── 05_monthly_sales_trends.sql
 │   └── sql_business_summary.md
+├── tableau/
+│   ├── README.md
+│   ├── tableau_kpi_summary.csv
+│   ├── tableau_monthly_sales.csv
+│   ├── tableau_top_categories.csv
+│   ├── tableau_category_pairs.csv
+│   └── tableau_data_quality.csv
 └── data/
     └── README.md
 ```
@@ -89,6 +97,8 @@ The notebook can also be adapted to another grocery transaction dataset with sim
 
 To run the SQL analysis, import `transaction_data.csv` and `product.csv` into a local SQLite database and run the scripts in [`sql/`](sql/). The monthly trend query uses derived 30-day periods from the dataset's `DAY` field because no calendar date is available.
 
+For dashboard building, use the summary CSVs in [`tableau/`](tableau/) as separate Tableau data sources. These files support a single dashboard with sales KPIs, monthly trend, top categories, top category pairs, and data quality checks.
+
 The analysis is designed for local execution because the raw transaction and promotion files are not committed to GitHub.
 
 ## Portfolio Notes
@@ -97,6 +107,7 @@ This project demonstrates:
 
 - Data cleaning and integration
 - SQL querying, relational data joins, data quality checks, and trend analysis
+- Tableau dashboard preparation and KPI storytelling
 - Exploratory data analysis
 - Market basket analysis
 - Affinity metrics and recommendation logic

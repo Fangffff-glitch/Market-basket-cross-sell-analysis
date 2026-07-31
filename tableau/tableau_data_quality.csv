@@ -1,0 +1,2 @@
+zero_sales_rows,negative_sales_rows,missing_basket_id_rows,missing_product_id_rows,unmatched_product_rows,duplicate_record_groups,extra_duplicate_rows,non_positive_baskets,max_basket_value
+18850,0,0,0,0,0,0,942,961.49
